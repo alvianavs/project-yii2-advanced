@@ -2,13 +2,13 @@
 
 namespace frontend\controllers;
 
-use backend\models\Item;
-use backend\models\Order;
-use backend\models\OrderItem;
-use backend\models\OrderItemSearch;
+use Yii;
+use common\models\Item;
+use common\models\Order;
+use common\models\OrderItem;
+use common\models\OrderItemSearch;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
-use Yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;

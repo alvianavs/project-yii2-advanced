@@ -1,11 +1,11 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
+use backend\models\ItemCategory;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
-use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "item".

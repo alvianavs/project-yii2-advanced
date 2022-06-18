@@ -2,9 +2,9 @@
 
 namespace backend\controllers;
 
-use backend\models\Order;
-use backend\models\OrderItem;
-use backend\models\OrderSearch;
+use common\models\Order;
+use common\models\OrderItem;
+use common\models\OrderSearch;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

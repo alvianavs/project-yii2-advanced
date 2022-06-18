@@ -1,9 +1,9 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
-use common\models\User;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "customer".
@@ -15,7 +15,7 @@ use common\models\User;
  *
  * @property User $user
  */
-class Customer extends \yii\db\ActiveRecord
+class Customer extends ActiveRecord
 {
     /**
      * {@inheritdoc}

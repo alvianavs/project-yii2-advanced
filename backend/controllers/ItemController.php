@@ -3,9 +3,9 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Item;
+use common\models\Item;
+use common\models\ItemSearch;
 use backend\models\ItemCategory;
-use backend\models\ItemSearch;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

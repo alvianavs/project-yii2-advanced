@@ -1,8 +1,9 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "order_item".
@@ -13,7 +14,7 @@ use Yii;
  * @property Item $item
  * @property Order $order
  */
-class OrderItem extends \yii\db\ActiveRecord
+class OrderItem extends ActiveRecord
 {
     /**
      * {@inheritdoc}

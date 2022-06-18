@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use common\models\Item;
 use Yii;
 
 /**

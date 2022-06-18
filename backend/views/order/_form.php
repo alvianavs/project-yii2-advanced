@@ -1,7 +1,7 @@
 <?php
 
-use backend\models\Customer;
-use backend\models\Item;
+use common\models\Customer;
+use common\models\Item;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;

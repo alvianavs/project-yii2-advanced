@@ -2,10 +2,10 @@
 
 namespace backend\controllers;
 
-use backend\models\Customer;
-use backend\models\CustomerSearch;
-use backend\models\OrderItem;
-use backend\models\OrderItemSearch;
+use common\models\Customer;
+use common\models\CustomerSearch;
+use common\models\OrderItem;
+use common\models\OrderItemSearch;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;

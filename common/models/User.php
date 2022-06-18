@@ -212,6 +212,6 @@ class User extends ActiveRecord implements IdentityInterface
     }
     public function getCustomer()
     {
-        return $this->hasOne(\backend\models\Customer::className(), ['user_id' => 'id']);
+        return $this->hasOne(Customer::className(), ['user_id' => 'id']);
     }
 }
