@@ -1,5 +1,6 @@
 <?php
 
+use common\models\OrderItem;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;

@@ -53,13 +53,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Category',
                 'attribute' => 'item.category.name',
             ],
-            [
-                'class' => ActionColumn::className(),
-                'template' => '{view}',
-                'urlCreator' => function ($action, $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
-                 }
-            ],
         ],
     ]); ?>
 

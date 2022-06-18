@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\Customer;
 use Yii;
 use common\models\Item;
 use common\models\Order;
@@ -19,6 +20,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\data\ActiveDataProvider;
+use yii\data\SqlDataProvider;
 
 /**
  * Site controller
@@ -109,11 +112,12 @@ class SiteController extends Controller
     }
 
     public function actionShowOrder() {
-        $model = new OrderItem();
-        $searchModel = new OrderItemSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams);
+        $customer = Customer::findOne(['user_id' => Yii::$app->user->identity->id]);
+        $query = Order::find()->with('orderItems.item')->where(['customer_id' => $customer->id]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
         return $this->render('show-order', [
-            'model' => $model,
             'dataProvider' => $dataProvider,
         ]);
     }
